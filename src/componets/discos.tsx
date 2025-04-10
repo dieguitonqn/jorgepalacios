@@ -12,8 +12,8 @@ export const Disco = (disco:IDisco) => {
                     <Image
                         src={disco.imageUrl}
                         alt="Disco 1"
-                        width={300}
-                        height={300}
+                        width={250}
+                        height={250}
                         className="w-full h-auto rounded-lg mb-4"
                     />
                     <h3 className="text-xl font-semibold mb-2 dark:text-white">{disco.title}</h3>

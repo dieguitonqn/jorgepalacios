@@ -89,7 +89,7 @@ export default function Home() {
         <div>
           <h1 className=" text-3xl font-bold text-center mb-12 text-white ">Discografía</h1>
         </div>
-        <div className="flex flex-wrap justify-between max-w-2/4 mx-auto">
+        <div className="flex flex-wrap justify-between max-w-3/4 mx-auto">
           <Disco 
             title="Río Paradiso"
             description=" Album 2022 "
