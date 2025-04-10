@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import { IDisco } from "@/types/disco";
-
+import { FaSpotify } from "react-icons/fa";
+import * as motion from "motion/react-client";
 
 export const Disco = (disco:IDisco) => {
     return (
-        <div className="text-center px-2 py-4 flex justify-center items-center ">
+        <motion.div whileHover={{scale: 1.1}} className="text-center px-2 py-4 flex justify-center items-center ">
 
            
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-3 border border-gray-200 dark:border-gray-700">
@@ -23,13 +24,14 @@ export const Disco = (disco:IDisco) => {
                     <a
                         href={disco.audioUrl}
                         target="_blank"
-                        className="inline-block bg-amber-700 bg-opacity-50 hover:bg-opacity-100 text-white px-4 py-2 rounded-md transition-colors"
+                        className="flex items-center justify-center gap-1 mx-auto max-w-1/2 mx-auto  bg-amber-700 bg-opacity-50 hover:bg-opacity-100 text-white px-4 py-2 rounded-md transition-colors"
                     >
+                        <FaSpotify className="text-green-500 rounded-full text-2xl bg-black"/>
                         Escuchar
                     </a>
                 </div>
                 
             
-        </div>
+        </motion.div>
     );
 }

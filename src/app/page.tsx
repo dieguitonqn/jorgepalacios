@@ -3,6 +3,8 @@ import React from "react";
 import { Event } from "@/types/event";
 import CalendarCards from "@/componets/eventCard";
 import { Disco } from "@/componets/discos";
+
+
 const events: Event[] = [
   {
     id: '1',

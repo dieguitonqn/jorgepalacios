@@ -12,6 +12,7 @@ export const Navbar = () => {
           </div>
           <div className="hidden md:flex space-x-6">
             <Link href="/tienda" className="text-gray-300 hover:text-white">Tienda</Link>
+            <Link href="/galeria" className="text-gray-300 hover:text-white">Clases Particulares</Link>
             <Link href="/galeria" className="text-gray-300 hover:text-white">Galería</Link>
             <Link href="/productora" className="text-gray-300 hover:text-white">Productora</Link>
             <Link href="/sobre-mi" className="text-gray-300 hover:text-white">Sobre Mí</Link>

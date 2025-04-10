@@ -1,6 +1,9 @@
 // components/CalendarCards.tsx
 import React from 'react';
 import { Event } from '@/types/event';
+import { IoTicketOutline } from "react-icons/io5";
+import * as motion  from 'motion/react-client';
+
 
 interface CalendarCardsProps {
   events: Event[];
@@ -16,7 +19,7 @@ const CalendarCards: React.FC<CalendarCardsProps> = ({ events }) => {
   };
 
   return (
-    <div className="text-center flex flex-wrap mx-auto md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <motion.div whileHover={{y: -5}} className="text-center flex flex-wrap mx-auto md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {events.map((event) => (
         <div
           key={event.id}
@@ -36,14 +39,14 @@ const CalendarCards: React.FC<CalendarCardsProps> = ({ events }) => {
               href={event.ticketLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-amber-700 bg-opacity-50 hover:bg-opacity-100 text-white px-4 py-2 rounded-md transition-colors"
+              className="flex gap-1 justify-center items-center mx-auto bg-amber-700 bg-opacity-50 hover:bg-opacity-100 text-white px-4 py-2 rounded-md transition-colors"
             >
-              Comprar entradas
+              <IoTicketOutline className='text-2xl'/> Comprar entradas
             </a>
           )}
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
