@@ -146,7 +146,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-300">&ldquot;Las clases con Jorge han transformado completamente mi forma de tocar la guitarra. Su método es único y efectivo.&rdquo;</p>
+              <p className="text-gray-300">&ldquo;Las clases con Jorge han transformado completamente mi forma de tocar la guitarra. Su método es único y efectivo.&rdquo;</p>
             </div>
             <div className="p-6 bg-gray-800 rounded-lg border border-gray-700">
               <div className="flex items-center mb-4">
@@ -157,7 +157,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-300">&ldquot;Increíble experiencia de aprendizaje. Jorge no solo enseña técnica, sino que transmite su pasión por la música.&rdquo;</p>
+              <p className="text-gray-300">&ldquo;Increíble experiencia de aprendizaje. Jorge no solo enseña técnica, sino que transmite su pasión por la música.&rdquo;</p>
             </div>
           </div>
         </div>
