@@ -1,7 +1,7 @@
-import Link from "next/link";
+
 import React from "react";
 
-import { Disco } from "@/app/Discografia/components/discos";
+
 import ContactForm from "@/componets/Home/contactForm";
 
 export default function Home() {
