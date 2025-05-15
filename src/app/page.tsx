@@ -35,14 +35,42 @@ export default function Home() {
       </section>
       <section className="py-16 bg-gray-950">
         <div className="container flex flex-col mx-auto px-4">
+          {/* <h2 className="text-3xl font-bold text-center mb-12 text-white">
+            Info & Novedades 
+          </h2> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="border border-gray-700 rounded-lg p-6 bg-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-white">Novedades</h3>
+              <ul>
+                <li>Novedad 1</li>
+                <li>Novedad 2</li>
+                <li>Novedad 3</li>
+                <li>Novedad 4</li>
+              </ul>
+            </div>
+            <div className="border border-gray-700 rounded-lg p-6 bg-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-white">Proximos Eventos</h3>
+              <ul>
+                <li>Evento 1</li>
+                <li>Evento 2</li>
+                <li>Evento 3</li>
+                <li>Evento 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="py-16 bg-gray-950">
+        <div className="container flex flex-col mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            Novedades 
+            Próximas fechas y eventos 
           </h2>
           <div className="border border-gray-700 rounded-lg p-6 bg-gray-800 h-100">
 
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Sección de agenda de fechas y eventos */}
 
           {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,16 +92,7 @@ export default function Home() {
           </div> */}
         
       
-      <section className="py-16 bg-gray-950">
-        <div className="container flex flex-col mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            Info extra 
-          </h2>
-          <div className="border border-gray-700 rounded-lg p-6 bg-gray-800 h-100">
-
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-16 bg-gray-950">
         <div className="container flex flex-col mx-auto px-4">
