@@ -5,4 +5,5 @@ export interface IDisco  {
   description: string;
   imageUrl: string;
   audioUrl: string;
+  descripcionLarga?: string;
 }

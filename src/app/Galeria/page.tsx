@@ -84,7 +84,7 @@ function Page() {
             src={src}
             alt="Foto galería"
             className="galeria-thumb cursor-pointer object-cover w-full h-40 rounded shadow"
-            quality={100}
+            // quality={100}
             onClick={() => openModal(idx)}
           />
         ))}
@@ -111,12 +111,12 @@ function Page() {
               {fotos.map((src) => (
                 <SwiperSlide key={src}>
                   <Image
-                    width={1080}
-                    height={720}
+                    width={400}
+                    height={600}
                     src={src}
                     alt="Foto grande"
                     className="w-full h-[60vh] object-contain rounded"
-                    quality={100}
+                    // quality={100}
                   />
                 </SwiperSlide>
               ))}

@@ -5,10 +5,12 @@ import Link from 'next/link';
 import { Hamburguesa } from './hamburguesa';
 import { usePathname } from 'next/navigation';
 
+
 export const Navbar = () => {
     const pathname = usePathname();
     return (
-    <nav className="fixed w-full bg-black border-b border-gray-800 z-50 top-0">
+      <div className='mb-10'>
+        <nav className="fixed w-full bg-black border-b border-gray-800 z-50 top-0">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image src="/logo.jpeg" alt="Logo" width={40} height={40} />
@@ -26,4 +28,7 @@ export const Navbar = () => {
           <div className="block md:hidden"><Hamburguesa /></div>
         </div>
       </nav>
+      </div>
+
+    
 )}
