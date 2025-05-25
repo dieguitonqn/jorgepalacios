@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
+import type { Swiper as SwiperType } from 'swiper';
 
 // Listado de fotos (ejemplo, puedes agregar/quitar)
 const fotosColor = [
@@ -41,7 +42,7 @@ function Page() {
   const [tab, setTab] = useState<'color' | 'bn'>('color');
   const [modalOpen, setModalOpen] = useState(false);
   const [fotoIndex, setFotoIndex] = useState(0);
-  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const fotos = tab === 'color' ? fotosColor : fotosBN;
 
   const openModal = (idx: number) => {

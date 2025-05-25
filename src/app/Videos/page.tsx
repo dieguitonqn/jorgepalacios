@@ -63,25 +63,25 @@ function Videos() {
 				))}
 			</div>
 			{modalOpen && selectedVideo && (
-				<div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-					<div className="relative bg-black rounded-lg p-4 shadow-lg w-[90vw] max-w-md flex flex-col items-center">
+				<div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50">
+					<div className="relative bg-black/80 rounded-lg p-4 shadow-lg shadow-slate-700 w-[90vw] max-w-5xl flex flex-col items-center">
 						<button
-							className="absolute top-2 right-2 text-white text-2xl z-10"
+							className="absolute top-2 right-2 text-white text-4xl z-10"
 							onClick={closeModal}
 							aria-label="Cerrar"
 						>
 							×
 						</button>
-						<iframe
-							width="350"
-							height="200"
-							src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1&rel=0`}
-							title={selectedVideo.title}
-							frameBorder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowFullScreen
-							className="rounded"
-						></iframe>
+						<div className="w-full aspect-video">
+              <iframe
+                src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1&rel=0`}
+                title={selectedVideo.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full rounded"
+              ></iframe>
+            </div>
 						<a
 							href={`https://www.youtube.com/watch?v=${selectedVideo.youtubeId}`}
 							target="_blank"
