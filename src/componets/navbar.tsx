@@ -19,11 +19,13 @@ export const Navbar = () => {
           <div className="hidden md:flex space-x-3">
             <Link href="/Agenda" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1 ${pathname === '/Agenda' ? ' bg-gray-500 text-white' : ''}`}>Agenda</Link>
             <Link href="/Tienda" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Tienda' ? ' bg-gray-500 text-white' : ''}`}>Tienda</Link>
+            <Link href="/Reviews" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Galeria' ? ' bg-gray-500 text-white' : ''}`}>Reseñas</Link>
             <Link href="/Clases" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Clases' ? ' bg-gray-500 text-white' : ''}`}>Clases</Link>
             <Link href="/Discografia" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Discografia' ? ' bg-gray-500 text-white' : ''}`}>Discografía</Link>
             <Link href="/Productora" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Productora' ? ' bg-gray-500 text-white' : ''}`}>Productora</Link>
             <Link href="/Biografia" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Biografia' ? ' bg-gray-500 text-white' : ''}`}>Biografía</Link>
             <Link href="/Galeria" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Galeria' ? ' bg-gray-500 text-white' : ''}`}>Galería</Link>
+            <Link href="/Videos" className={`text-gray-300 hover:text-white hover:bg-gray-500 rounded-md px-2 py-1${pathname === '/Galeria' ? ' bg-gray-500 text-white' : ''}`}>Videos</Link>
           </div>
           <div className="block md:hidden"><Hamburguesa /></div>
         </div>

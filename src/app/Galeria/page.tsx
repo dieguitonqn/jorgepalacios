@@ -41,6 +41,7 @@ function Page() {
   const [tab, setTab] = useState<'color' | 'bn'>('color');
   const [modalOpen, setModalOpen] = useState(false);
   const [fotoIndex, setFotoIndex] = useState(0);
+  const [swiperInstance, setSwiperInstance] = useState<any>(null);
   const fotos = tab === 'color' ? fotosColor : fotosBN;
 
   const openModal = (idx: number) => {
@@ -101,12 +102,10 @@ function Page() {
             </button>
             <Swiper
               initialSlide={fotoIndex}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }}
+              navigation={false}
               onSlideChange={swiper => setFotoIndex(swiper.activeIndex)}
               className="galeria-swiper"
+              onSwiper={setSwiperInstance}
             >
               {fotos.map((src) => (
                 <SwiperSlide key={src}>
@@ -116,17 +115,22 @@ function Page() {
                     src={src}
                     alt="Foto grande"
                     className="w-full h-[60vh] object-contain rounded"
-                    // quality={100}
                   />
                 </SwiperSlide>
               ))}
-              <div className="swiper-button-prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer z-10">
-                <FaChevronLeft />
-              </div>
-              <div className="swiper-button-next absolute right-2 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer z-10">
-                <FaChevronRight />
-              </div>
             </Swiper>
+            <div
+              className="swiper-button-prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer z-10"
+              onClick={() => swiperInstance?.slidePrev()}
+            >
+              <FaChevronLeft />
+            </div>
+            <div
+              className="swiper-button-next absolute right-2 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer z-10"
+              onClick={() => swiperInstance?.slideNext()}
+            >
+              <FaChevronRight />
+            </div>
           </div>
         </div>
       )}
