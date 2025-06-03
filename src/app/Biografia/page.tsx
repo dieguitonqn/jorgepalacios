@@ -9,7 +9,7 @@ function page() {
         <h1 className="biografia-title mt-10">Jorge Palacios</h1>
         <div >
         <Image
-          src="/Jorge/jorge.jpeg"
+          src="/Jorge/jorge.webp"
           alt="Jorge Palacios"
           width={300}
           height={300}

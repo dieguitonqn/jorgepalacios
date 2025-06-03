@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { IDisco } from "@/types/disco";
+import { IDisco } from "@/app/Discografia/types/disco";
 import { FaInfo, FaSpotify } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Infografia } from "./infografia";
@@ -59,6 +59,7 @@ export const Disco = (disco: IDisco) => {
         <Infografia
           title={disco.title}
           description={disco.descripcionLarga!}
+          musicos={disco.musicos}
         />
         </motion.div>
       )}

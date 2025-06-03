@@ -13,7 +13,7 @@ export default function Home() {
       <section
         className="pt-20 pb-12 bg-gradient-to-r from-gray-900 via-black to-gray-900 relative h-120"
         style={{
-          backgroundImage: `url('/Jorge/_NZO1352 copia 2.jpg')`,
+          backgroundImage: `url('/Jorge/_NZO1352 copia 2.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

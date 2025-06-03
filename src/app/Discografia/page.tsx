@@ -15,6 +15,23 @@ function page() {
             imageUrl="/Albumes/rioparadiso.jpeg"
             audioUrl="https://open.spotify.com/album/3BlqYgJh0p3zb9FcvqBM1i?si=0UMerkPTQradLasD_eTAnw"
             descripcionLarga='lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            musicos={
+              [
+                {
+                  nombre: "Jorge Palacios",
+                  instrumento: "Guitarra y voz",
+                  link:"https://jorgepalacios.com.ar"
+                },
+                {
+                  nombre: "Pablo Gonzalez",
+                  instrumento: "Bajo",
+                },
+                {
+                  nombre: "Pablo Gonzalez",
+                  instrumento: "Batería",
+                },
+              ]
+            }
            />
            <Disco
             title="Escordando"
